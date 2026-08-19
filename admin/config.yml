@@ -1,0 +1,138 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - label: "Homepage & Sections"
+        name: "content"
+        file: "data/content.json"
+        fields:
+          - label: "Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "Harshada Sant site URL", name: "personalLinkUrl", widget: "string", hint: "Full URL, e.g. https://harshadasant.example.com" }
+              - { label: "Link text", name: "personalLinkLabel", widget: "string" }
+
+          - label: "Hero (top of page)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow (small caption above title)", name: "eyebrow", widget: "string" }
+              - { label: "Lab name", name: "name", widget: "string" }
+              - { label: "Role / tagline question", name: "role", widget: "string" }
+              - { label: "Bio paragraph", name: "hook", widget: "text", hint: "You can use *italics* and **bold**." }
+              - { label: "Figure image", name: "figureImage", widget: "image", required: false }
+              - { label: "Figure caption", name: "figureCaption", widget: "string", required: false }
+
+          - label: "Research"
+            name: "research"
+            widget: "object"
+            fields:
+              - { label: "Intro text", name: "lede", widget: "text" }
+              - label: "Research areas"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Members"
+            name: "members"
+            widget: "object"
+            fields:
+              - label: "Principal Investigator"
+                name: "pi"
+                widget: "object"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Role", name: "role", widget: "string" }
+                  - { label: "Focus", name: "focus", widget: "string" }
+              - label: "Stats (e.g. lab size)"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "num", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+              - label: "Team photos"
+                name: "teamPhotos"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Caption", name: "caption", widget: "string", required: false }
+              - label: "Current members"
+                name: "current"
+                widget: "list"
+                field: { label: "Name", name: "name", widget: "string" }
+              - label: "Past members"
+                name: "past"
+                widget: "list"
+                required: false
+                field: { label: "Name", name: "name", widget: "string" }
+              - { label: "Note (e.g. how to join)", name: "note", widget: "text", required: false }
+
+          - label: "Collaborators"
+            name: "collaborators"
+            widget: "object"
+            fields:
+              - { label: "Intro text", name: "lede", widget: "text" }
+              - label: "People"
+                name: "people"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Institution", name: "institution", widget: "string" }
+                  - { label: "Focus", name: "focus", widget: "string" }
+
+          - { label: "Closing statement", name: "closing", widget: "text" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Lab location", name: "locationHtml", widget: "string", hint: "You can include <br> for a line break" }
+
+  - name: "publications"
+    label: "Publications"
+    files:
+      - label: "Publications List"
+        name: "publications"
+        file: "data/publications.json"
+        fields:
+          - label: "Talks"
+            name: "talks"
+            widget: "list"
+            fields:
+              - { label: "Citation", name: "citation", widget: "text", hint: "You can use *italics* for species names" }
+              - { label: "Venue", name: "venue", widget: "string", required: false }
+              - { label: "Photo (optional)", name: "image", widget: "image", required: false }
+          - label: "In preparation"
+            name: "inPrep"
+            widget: "list"
+            fields:
+              - { label: "Citation", name: "citation", widget: "text" }
+          - { label: "Note at bottom of section", name: "note", widget: "text", hint: "Use {{PERSONAL_URL}} where you want the link to the personal site to go" }
+
+  - name: "news"
+    label: "News"
+    files:
+      - label: "News Posts"
+        name: "news"
+        file: "data/news.json"
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{headline}} — {{date}}"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "Body (optional)", name: "body", widget: "text", required: false }

@@ -1,0 +1,15 @@
+{
+  "talks": [
+    {
+      "citation": "Sturgis M*, Perez N*, Cook AM, Wu Y, Schalek R, Ray S, Lichtman JW, Katz PS, Sant HH. Mapping the juvenile nervous system of the mollusc *Berghia stephanieae*.",
+      "venue": "Central and Western Massachusetts Chapter, Society for Neuroscience · April 10, 2026",
+      "image": "images/sfn-regional-talk.png"
+    }
+  ],
+  "inPrep": [
+    {
+      "citation": "Grado M*, Pérez-Moreno JL, Sant HH. A reproducible computational protocol for neural gene family characterization in non-model organisms: a neurogenomics case study in *Berghia stephanieae*."
+    }
+  ],
+  "note": "\\* denotes undergraduate mentee. Full publication record, including conference abstracts, is on [Harshada Sant's page]({{PERSONAL_URL}}#publications)."
+}

@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "personalLinkUrl": "https://YOUR-PERSONAL-DOMAIN",
+    "personalLinkLabel": "Harshada Sant →"
+  },
+  "hero": {
+    "eyebrow": "College of the Holy Cross · Biology & Neuroscience",
+    "name": "Sant Lab",
+    "role": "Why can some animals regrow damaged brain tissue while others cannot?",
+    "hook": "Most animals that lose nervous tissue lose it for good — but not *Berghia stephanieae*, a nudibranch mollusc whose brain grows continuously throughout life and can fully regenerate after injury. We study the role of glial cells — the nervous system's non-neuronal cells — identifying glial cell types across species and tracking how they change across development, aging, and regeneration.",
+    "figureImage": "images/berghia-lifecycle.png",
+    "figureCaption": "Berghia stephanieae develops from an egg mass to a reproductive adult in roughly eight weeks, with the brain continuing to grow throughout."
+  },
+  "research": {
+    "lede": "**Why can some animals regrow damaged brain tissue while others cannot?** My lab is building an answer using *Berghia stephanieae*, a nudibranch mollusc whose brain grows continuously throughout life and can fully regenerate — an emerging model system well suited to undergraduate-driven discovery. Combining comparative connectomics, single-cell transcriptomics, and molecular neuroscience, we're identifying glial cell types across species and tracking how glia, progenitors, and neurons rebuild nervous systems across development, aging, and regeneration.",
+    "cards": [
+      { "title": "Comparative connectomics", "description": "Building a volume electron microscopy connectome of the Berghia brain with the Katz (UMass Amherst) and Lichtman (Harvard) labs, compared against Drosophila, mouse, and human connectomes." },
+      { "title": "Transcriptomics & neurogenomics", "description": "Mining single-cell transcriptomic data, validated with in-situ hybridization, to identify conserved and species-specific glial cell types." },
+      { "title": "Computational image analysis", "description": "Machine-learning-assisted segmentation and 3D reconstruction using open-source tools that run on undergraduate-institution-scale computing." },
+      { "title": "Aging & regeneration", "description": "Immunohistochemistry and proliferation markers tracking neurons, glia, and progenitors across development, aging, and nerve regeneration." }
+    ]
+  },
+  "members": {
+    "pi": {
+      "name": "Harshada Sant, PhD",
+      "role": "Principal Investigator",
+      "focus": "Comparative connectomics, neurogenomics, and glial biology in Berghia stephanieae"
+    },
+    "stats": [
+      { "num": "10", "label": "Undergraduate researchers currently in the lab" },
+      { "num": "40+", "label": "Undergraduates mentored since 2021" },
+      { "num": "4", "label": "Weiss Summer Research Fellows" }
+    ],
+    "teamPhotos": [
+      { "image": "images/weiss-fellows-welcome.png", "caption": "Welcoming this year's Weiss Summer Research Fellows to the Sant Lab." },
+      { "image": "images/katz-lab-undergrads.png", "caption": "In the Katz Lab at UMass Amherst, with some of the undergraduates who worked with me." }
+    ],
+    "current": [
+      "Precious Balogun",
+      "Aghoghotobore Oghenekaro",
+      "Karenna Beckstein",
+      "Jett Franqui",
+      "Melody Grado",
+      "Kyle Shea",
+      "Sareena Kansra",
+      "Natalia Perez",
+      "Maguire Sturgis",
+      "Sophia Suffoletto",
+      "Paula-Ashley Kong",
+      "Anahi Paulino"
+    ],
+    "past": [
+      "Claire Sipes"
+    ],
+    "note": "The lab doesn't require prior research experience or advanced coursework to join — first- and second-year students work alongside juniors and seniors, trying both wet-lab and computational work before choosing what interests them most."
+  },
+  "collaborators": {
+    "lede": "This work happens with generous collaborators across institutions.",
+    "people": [
+      { "name": "Dr. Cheyenne Tait", "institution": "Marshall University", "focus": "Neural mechanisms of sensory and decision-making behavior in nudibranch molluscs" },
+      { "name": "Neeharika Verma", "institution": "Marine Biological Laboratory · Patel Lab", "focus": "Development and regeneration in the crustacean Parhyale hawaiensis" },
+      { "name": "Dr. Jorge Perez-Moreno", "institution": "University of Massachusetts Amherst · Katz Lab", "focus": "Computational and molecular neurobiology, neurogenomics" }
+    ]
+  },
+  "closing": "We combine connectomics, transcriptomics, and wet-lab work to ask how neurons, glial cells, and their progenitors change across development, aging, and regeneration — and which of these dynamics are conserved across the animal kingdom.",
+  "contact": {
+    "email": "hsant@holycross.edu",
+    "locationHtml": "College of the Holy Cross<br>1 College Street, Worcester, MA 01610"
+  }
+}
